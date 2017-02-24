@@ -4,15 +4,15 @@
 const webpack = require('webpack')
 
 let libraryName = 'uportconnect'
+let outputFile = libraryName + '.min.js'
 
 // Final Config
 module.exports = {
-  entry: {'uport-connect': './src/index.js',
-          'uport-connect-core': './src/indexCore.js'},
+  entry: './src/index.js',
   devtool: 'source-map',
   output: {
     path: 'dist',
-    filename: '[name].min.js',
+    filename: outputFile,
     library: libraryName,
     libraryTarget: 'umd',
     umdNamedDefine: true
