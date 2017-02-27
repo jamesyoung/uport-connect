@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import Web3 from 'web3'
-import { Connect } from './uport-connect'
+import { Connect } from '../src/index'
 import Autosigner from '../utils/autosigner'
 import testData from './testData.json'
 // import TestRPC from 'ethereumjs-testrpc'
